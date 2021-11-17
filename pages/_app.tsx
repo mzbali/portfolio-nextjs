@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
 import Layout from '../component/layouts/main';
 
-const Website = ({ Component, pageProps, router }: AppProps) => {
+const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
   return (
     <ChakraProvider>
       <Layout router={router}>
