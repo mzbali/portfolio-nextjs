@@ -1,9 +1,10 @@
-import { extendTheme } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
+import { extendTheme, ThemeConfig } from '@chakra-ui/react';
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
+
 const style = {
-  global: props => ({
+  global: (props: StyleFunctionProps) => ({
     body: {
-      bg: mode('#f0e7db', '#202023')(props)
+      bg: mode('#f2e4d0', '#202023')(props) //#f0e7db
     }
   })
 };
@@ -23,7 +24,7 @@ const components = {
     }
   },
   Link: {
-    baseStyle: props => ({
+    baseStyle: (props: StyleFunctionProps) => ({
       color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3
     })
@@ -38,18 +39,10 @@ const colors = {
   glassTeal: '#88ccca'
 };
 
-const config = {
+const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: true
 };
-
-// type theme = {
-//   config: object;
-//   style: object;
-//   components: object;
-//   colors: object;
-//   fonts: object;
-// };
 
 const theme = extendTheme({
   config,
