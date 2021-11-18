@@ -6,7 +6,7 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react';
-
+import Section from '../component/Section';
 const Page: React.FC = () => {
   return (
     <Container>
@@ -44,6 +44,12 @@ const Page: React.FC = () => {
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>
     </Container>
   );
 };
