@@ -12,7 +12,7 @@ const Page: React.FC = () => {
     <Container>
       <Box
         borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')}
         p={3}
         mb={6}
         textAlign="center"
