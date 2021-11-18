@@ -4,7 +4,7 @@ import { Container, Box, Heading } from '@chakra-ui/react';
 const Page: React.FC = () => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red" p={3} mb={6} textAlign="center">
+      <Box borderRadius="lg" bg="teal.300" p={3} mb={6} textAlign="center">
         Hello, I&apos;m a full-stack developer based in Bangladesh!
       </Box>
       <Box display={{ md: 'flex' }}>
