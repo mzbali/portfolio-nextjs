@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
 import Navbar from '../Navbar';
+import { Router } from 'next/dist/client/router';
 
-const Main: React.FC = ({ children, router }) => {
+const Main: React.FC<{ router: Router }> = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>

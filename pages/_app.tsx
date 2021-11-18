@@ -4,7 +4,7 @@ import Layout from '../component/layouts/main';
 import theme from '../lib/theme';
 import Fonts from '../component/Fonts';
 
-const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
+function Website({ Component, pageProps, router }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
@@ -13,6 +13,6 @@ const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
       </Layout>
     </ChakraProvider>
   );
-};
+}
 
 export default Website;
