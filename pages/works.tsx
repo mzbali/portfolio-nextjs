@@ -15,7 +15,7 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png';
 
 const Works: React.FC = () => {
   return (
-    <Layout>
+    <Layout title="Works">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
           Works

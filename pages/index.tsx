@@ -16,7 +16,7 @@ import { BioSection, BioYear } from '../components/Bio';
 
 const Page: React.FC = () => {
   return (
-    <Layout>
+    <Layout title="Homepage">
       <Container>
         <Box
           borderRadius="lg"
