@@ -41,7 +41,7 @@ export const WorkGridItem: React.FC<{
           <Image
             src={thumbnail}
             alt={title}
-            className="grid-item-thumnail"
+            className="grid-item-thumbnail"
             placeholder="blur"
           />
           <LinkOverlay href={`/works/${id}`}>
