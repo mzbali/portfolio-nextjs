@@ -8,10 +8,10 @@ import {
   Link,
   Button
 } from '@chakra-ui/react';
-import Section from '../component/Section';
-import Paragraph from '../component/Paragraph';
+import Section from '../components/Section';
+import Paragraph from '../components/Paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { BioSection, BioYear } from '../component/Bio';
+import { BioSection, BioYear } from '../components/Bio';
 
 const Page: React.FC = () => {
   return (

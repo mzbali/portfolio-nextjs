@@ -1,8 +1,8 @@
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
-import Layout from '../component/layouts/main';
+import Layout from '../components/layouts/main';
 import theme from '../lib/theme';
-import Fonts from '../component/Fonts';
+import Fonts from '../components/Fonts';
 
 function Website({ Component, pageProps, router }: AppProps) {
   return (
