@@ -4,15 +4,23 @@ import {
   Box,
   Heading,
   Image,
-  useColorModeValue,
   Link,
-  Button
+  Button,
+  SimpleGrid,
+  List,
+  ListItem,
+  useColorModeValue,
+  Icon
 } from '@chakra-ui/react';
 import Section from '../components/Section';
 import Layout from '../components/layouts/Article';
 import Paragraph from '../components/Paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/Bio';
+import { GridItem } from '../components/GridItem';
+import { IoLogoTwitter, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5';
+import thumbnailYoutube from '../public/images/links/youtube.png';
+import thumbnailInkDrop from '../public/images/works/inkdrop_eyecatch.png';
 
 const Page: React.FC = () => {
   return (
@@ -99,6 +107,54 @@ const Page: React.FC = () => {
             Drums, <Link href="https://500px.com/p/craftzdog">Photography</Link>
             , Linux, Machine Learning and All things technology
           </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/mzbali" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @mzbali
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/zokestein" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @zokestein
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="#" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                >
+                  Discord
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem href="#" title="Dev as Life" thumbnail={thumbnailYoutube}>
+              My Youtube Channel
+            </GridItem>
+            <GridItem href="#" title="Inkdrop" thumbnail={thumbnailInkDrop}>
+              A Markdown note-taking app
+            </GridItem>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>
