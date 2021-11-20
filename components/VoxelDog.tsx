@@ -89,7 +89,7 @@ const VoxelDog: React.FC = () => {
         req = requestAnimationFrame(animate);
 
         frame = frame <= 100 ? frame + 1 : frame;
-
+        /* first 100 frame play this fast rotation  */
         if (frame <= 100) {
           const p = initialCameraPosition;
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
