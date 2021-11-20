@@ -93,7 +93,7 @@ const VoxelDog: React.FC = () => {
         if (frame <= 100) {
           const p = initialCameraPosition;
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
-
+          /* rotate the camera in x and z axis, to make it look like voxel rotating from a fixed position */
           camera.position.y = 10;
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
